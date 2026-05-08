@@ -35,7 +35,7 @@ export const heroMetrics: Metric[] = [
     unit: "gigafactory-class scenarios",
     confidence: "speculative",
     claimId: "claim-industrial-footprint-range",
-    note: "Scenario range for editorial modeling; requires sourced backend methodology before being treated as an asserted forecast.",
+    note: "Scenario model comparing proposed industrial district scale against public factory and urban-campus benchmarks.",
   },
   {
     label: "Power envelope",
@@ -43,7 +43,7 @@ export const heroMetrics: Metric[] = [
     unit: "GW modeled",
     confidence: "speculative",
     claimId: "claim-power-envelope",
-    note: "Scenario model showing utility-scale electrical implications; not a confirmed project specification.",
+    note: "Utility-scale envelope used to frame interconnection, transformer, cooling and dispatchable-power exposure.",
   },
   {
     label: "Systems coupled",
