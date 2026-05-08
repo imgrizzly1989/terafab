@@ -54,3 +54,4 @@ Thumbs.db
 .npm/
 .yarn/cache/
 .pnpm-store/
+.vercel
