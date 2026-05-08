@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #030405;
-  --foreground: #f2f5f7;
-  --void: #030405;
-  --graphite: #101318;
-  --carbon: #171b21;
-  --steel: #2e3742;
-  --arc-blue: #4da3ff;
-  --grid-cyan: #42e8ff;
-  --energy-amber: #ffb020;
+  --background: #f4f1ea;
+  --foreground: #141414;
+  --void: #141414;
+  --graphite: #1f2427;
+  --carbon: #2f3437;
+  --steel: #6c7478;
+  --arc-blue: #1b6b62;
+  --grid-cyan: #7aa7a1;
+  --energy-amber: #9a6a2f;
 }
 
 @theme inline {
@@ -25,7 +25,7 @@
 
 html {
   background: var(--background);
-  color-scheme: dark;
+  color-scheme: light;
   scroll-behavior: smooth;
 }
 
@@ -33,9 +33,7 @@ body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
-  background:
-    radial-gradient(circle at 50% -20%, rgba(77, 163, 255, 0.14), transparent 32rem),
-    var(--background);
+  background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   text-rendering: optimizeLegibility;
@@ -48,16 +46,16 @@ a {
 
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid rgba(66, 232, 255, 0.8);
+  outline: 2px solid rgba(27, 107, 98, 0.85);
   outline-offset: 4px;
 }
 
 .grid-overlay {
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px),
-    linear-gradient(rgba(66, 232, 255, 0.09) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(66, 232, 255, 0.09) 1px, transparent 1px);
+    linear-gradient(rgba(20, 20, 20, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 20, 20, 0.055) 1px, transparent 1px),
+    linear-gradient(rgba(27, 107, 98, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(27, 107, 98, 0.06) 1px, transparent 1px);
   background-size: 48px 48px, 48px 48px, 240px 240px, 240px 240px;
   mask-image: radial-gradient(circle at center, black, transparent 74%);
 }
